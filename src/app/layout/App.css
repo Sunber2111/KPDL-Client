@@ -1,0 +1,38 @@
+body {
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.btn-round {
+  position: absolute;
+  top: 58%;
+  left: 30px;
+  background: #3d4051;
+  color: White;
+  font-size: 18px;
+  font-weight: bold;
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 24px;
+}
+
+.btn-round:hover {
+  color: rgb(226, 226, 226);
+  cursor: pointer;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    rgb(0, 143, 104),
+    rgb(250, 224, 66)
+  );
+  border-image-slice: 1;
+}
