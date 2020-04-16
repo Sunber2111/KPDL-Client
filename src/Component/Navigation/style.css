@@ -1,0 +1,28 @@
+.menu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30% !important;
+  margin: 0 !important;
+}
+
+.logo {
+  width: 120px;
+  top: -30px;
+  left: 40px;
+  position: absolute;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  border-image-slice: 1;
+  color: #747474 !important;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.ui.secondary.pointing.menu .item {
+    color: #818181 !important;
+    font-weight: 400;
+    font-size: 14px;
+  }

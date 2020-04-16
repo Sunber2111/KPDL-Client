@@ -6,7 +6,7 @@ import ModalContainer from "../../Container/Modal/ModalContainer";
 //Redux
 import { Provider } from "react-redux";
 import store from "../../Redux/store";
-import Navigation from "../../Component/Navigation/Navigation";
+import Navigation from "../../Component/Navigation";
 import PointPage from "../../Component/Layout/PointPage";
 
 const App = () => {
