@@ -25,4 +25,11 @@
     color: #818181 !important;
     font-weight: 400;
     font-size: 14px;
-  }
+}
+.nav-top{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+}

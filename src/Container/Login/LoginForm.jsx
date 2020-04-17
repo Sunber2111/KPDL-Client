@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core";
 import logo from "../../App/images/logo.png";
@@ -34,7 +34,7 @@ const LoginForm = () => {
   const classes = useStyles();
   return (
     <div>
-      <img src={logo} className={classes.logo} />
+      <img src={logo} className={classes.logo} alt="logo" />
       <form noValidate autoComplete="off" style={{marginTop:"-100px"}}>
         <TextField
           fullWidth={true}

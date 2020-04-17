@@ -26,4 +26,6 @@ html {
   color: rgb(226, 226, 226);
   cursor: pointer;
 }
-
+.content-app{
+  margin-top: 65px !important;
+}

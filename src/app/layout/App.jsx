@@ -13,8 +13,10 @@ const App = () => {
   return (
     <Provider store={store}>
       <Fragment>
-        <Navigation/>
-        <PointPage/>
+        <Navigation />
+        <div className="content-app">
+          <PointPage />
+        </div>
         <ModalContainer />
       </Fragment>
     </Provider>

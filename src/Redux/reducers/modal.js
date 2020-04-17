@@ -12,7 +12,7 @@ export default (state = initialState, { type, payload }) => {
         ...state,
         open : true,
         body : payload
-        }
+      }
     }
     case CLOSE_MODAL:{
         return{

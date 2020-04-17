@@ -1,19 +1,30 @@
 import React, { Fragment } from "react";
-import { makeStyles } from "@material-ui/core";
-
-const useStyle = makeStyles({
-  main: {
-    background: "#F1F1F1",
-    height:"100vh"
-  },
-});
-
+import "./style.css";
+import Clusters from "../../../Container/Clusters";
+import Students from "../../../Container/Students";
+import { Grid } from "@material-ui/core";
+import PopChart from "../../../Container/PopChart";
 
 const PointPage = () => {
-  const classes = useStyle();
   return (
     <Fragment>
-      <div className={classes.main}>Point Page</div>
+      <div className="point-page">
+        <Clusters />
+        <Grid
+          container
+          direction="row"
+          justify="flex-start"
+          alignItems="flex-start"
+          className="point-group"
+        >
+          <Grid item xs={5}>
+            <Students />
+          </Grid>
+          <Grid item xs={7} className="charts-point">
+            <PopChart/>
+          </Grid>
+        </Grid>
+      </div>
     </Fragment>
   );
 };
