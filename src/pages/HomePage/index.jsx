@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import bg from "../../../App/images/background.png";
 import logo from "../../../App/images/logo.png";
 import { makeStyles } from "@material-ui/core/styles";
-import Navbar from "../../Navbar";
+import Navbar from "../../Component/Navbar";
 import { useDispatch } from "react-redux";
-import { openModal } from "../../../Redux/actions/modal";
-import LoginForm from "../../../Container/Login/LoginForm";
+import { openModal } from "../../redux/actions/modal";
+import LoginForm from "../../Container/Login/LoginForm";
 
 const useStyles = makeStyles({
   img: {

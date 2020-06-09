@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import "./style.css";
-import Clusters from "../../../Container/Clusters";
-import Students from "../../../Container/Students";
+import Clusters from "../../Container/Clusters";
+import Students from "../../Container/Students";
 import { Grid } from "@material-ui/core";
-import PopChart from "../../../Container/PopChart";
+import PopChart from "../../Container/PopChart";
 
 const PointPage = () => {
   return (

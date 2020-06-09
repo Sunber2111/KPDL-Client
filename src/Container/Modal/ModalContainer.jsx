@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Modal } from "semantic-ui-react";
-import { closeModal } from "../../Redux/actions/modal";
+import { closeModal } from "redux/actions/modal";
 
 const ModalsContainer = () => {
   const { open, body } = useSelector((state) => state.modal);

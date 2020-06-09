@@ -1,5 +1,5 @@
-import { GET_DATA_KMEAN } from "../constant/student";
-import agent from "../../App/API/agent";
+import { GET_DATA_KMEAN } from "redux/actions/node_modules/constant/student";
+import agent from "redux/actions/node_modules/app/api/agent";
 
 export const getDataKmean = (idSubject) => async (dispatch) => {
   try {

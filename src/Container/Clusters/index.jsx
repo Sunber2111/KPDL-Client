@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import TrendingUpIcon from "@material-ui/icons/TrendingUp";
 import ImportExportIcon from "@material-ui/icons/ImportExport";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
-import { getDataKmean } from "../../Redux/actions/student";
+import { getDataKmean } from "../../redux/actions/student";
 
 const Clusters = () => {
   const dispatch = useDispatch();

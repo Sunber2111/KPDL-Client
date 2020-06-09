@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "app/api/node_modules/axios";
 
 axios.defaults.baseURL = "http://localhost:5000/api/";
 
@@ -12,8 +12,10 @@ const request = {
 };
 
 const Student = {
-  listByIdSubject : (idSubject) => request.get(`student/subject/${idSubject}`),
-  listByKmean: async (idSubject) => await request.get(`student/chart/${idSubject}`)
+  listByIdSubject: (idSubject) => request.get(`student/subject/${idSubject}`),
+  listByKmean: async (idSubject) =>
+    await request.get(`student/chart/${idSubject}`),
+  listFPG: async () => await request.get("student/fpg"),
 };
 
 export default {
