@@ -8,14 +8,14 @@ import { Provider } from "react-redux";
 import store from "../../Redux/store";
 import Navigation from "../../Component/Navigation";
 import PointPage from "../../Component/Layout/PointPage";
-
+import StudentPage from "../../Container/Layout/Student/StudentPage";
 const App = () => {
   return (
     <Provider store={store}>
       <Fragment>
         <Navigation />
         <div className="content-app">
-          <PointPage />
+         <PointPage/>
         </div>
         <ModalContainer />
       </Fragment>
