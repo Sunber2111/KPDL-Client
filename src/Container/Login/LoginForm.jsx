@@ -1,7 +1,7 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core";
-import logo from "../../App/images/logo.png";
+import logo from "app/images/logo.png";
 import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles({

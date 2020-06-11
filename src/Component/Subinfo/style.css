@@ -1,0 +1,7 @@
+.subinfo{
+    min-height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(153, 153, 153);
+    margin-bottom: 13px;
+}

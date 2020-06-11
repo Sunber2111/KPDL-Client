@@ -31,7 +31,7 @@ const PopChart = () => {
           },
         },
       },
-      colors: ["#F44336", "#E91E63", "#9C27B0"],
+      colors: ["#38ef7d", "#fd1d1d", "#1FA2FF","#F9D423"],
       plotOptions: {
         bar: {
           columnWidth: "45%",

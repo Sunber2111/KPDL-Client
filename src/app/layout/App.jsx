@@ -1,10 +1,10 @@
-import React, { Fragment } from "app/layout/node_modules/react";
+import React, { Fragment } from "react";
 import "./App.css";
 import HomePage from "pages/HomePage";
 import ModalContainer from "container/Modal/ModalContainer";
 
 //Redux
-import { Provider } from "app/layout/node_modules/react-redux";
+import { Provider } from "react-redux";
 import store from "redux/store";
 import Navigation from "component/Navigation";
 import PointPage from "pages/PointPage";

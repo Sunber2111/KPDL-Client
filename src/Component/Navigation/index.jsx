@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "semantic-ui-react";
-import logo from "../../App/images/logo.png";
+import logo from "app/images/logo.png";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 

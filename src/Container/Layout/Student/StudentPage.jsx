@@ -1,5 +1,5 @@
 import React from "react";
-import Student from "../../../Component/Student";
+import Student from "component/Student";
 
 const StudentPage = () => {
   return (

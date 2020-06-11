@@ -1,14 +1,15 @@
 import React, { Fragment } from "react";
 import "./style.css";
-import Clusters from "../../Container/Clusters";
-import Students from "../../Container/Students";
+import Clusters from "container/Clusters";
+import Students from "container/Students";
 import { Grid } from "@material-ui/core";
-import PopChart from "../../Container/PopChart";
+import PopChart from "container/PopChart";
+import FPG from "container/FPG";
 
 const PointPage = () => {
   return (
     <Fragment>
-      <div className="point-page">
+      <div className="point-page mb-5">
         <Clusters />
         <Grid
           container
@@ -24,6 +25,7 @@ const PointPage = () => {
             <PopChart/>
           </Grid>
         </Grid>
+        <FPG/>
       </div>
     </Fragment>
   );

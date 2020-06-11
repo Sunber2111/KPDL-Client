@@ -1,17 +1,14 @@
 .cluster-1{
-
-    background-image: linear-gradient(120.78deg, #FC6076 10.48%, #FBDC89 85.86%) !important;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%) !important;
 }
 .cluster-2{
-    background-image: linear-gradient(165.62deg, #2AF598 16.15%, #009EFD 136.88%) !important;
+    background-image: linear-gradient(to bottom, #a8ff78, #47f3bf) !important;
 }
 .cluster-3{
     background-image:  linear-gradient(90deg, #F5509F 27.97%, #FB7277 80.61%) !important;
 }
 .cluster-4{
-    width: 100%;
-    padding: 0 !important;
-    margin: 0 !important;
+    background-image: linear-gradient(to left, #ff4e50, #f9d423) !important;
 }
 .final-cluster{
     width: 51%;
@@ -22,11 +19,10 @@
     right: 20px;
 }
 .g1{
-    width: 15%;
+    width: 15% !important;
 }
 .cluster-group{
     padding-left: 20px !important;
-    width: 100%;
 }
 .title-clus-group{
     padding-top: 10px;
