@@ -67,13 +67,12 @@ const PopChart = () => {
   };
   generateCluster();
   return (
-    <Segment>
+    <Segment className="pc p-0">
       <Chart
         options={options.options}
         series={options.series}
         type="bar"
-        height="450"
-        width="100%"
+        height="250"
       />
     </Segment>
   );

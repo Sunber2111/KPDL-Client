@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <div className="nav-top">
       <img alt="logo" src={logo} className="logo" />
-      <Menu pointing secondary className="menu">
+      <Menu pointing secondary className="menu-cus">
         <Menu.Item as={NavLink} to="/home">
           Trang Chủ
         </Menu.Item>

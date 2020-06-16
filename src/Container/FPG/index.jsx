@@ -1,10 +1,22 @@
-import React, { useEffect } from "react";
-import { Label, Grid, GridRow, GridColumn, Button } from "semantic-ui-react";
+import React, { useEffect, useState } from "react";
+import {
+  Label,
+  Grid,
+  GridRow,
+  GridColumn,
+  Button,
+  Form,
+  Checkbox,
+} from "semantic-ui-react";
 import { useSelector, useDispatch } from "react-redux";
 import { getDataFPG } from "redux/actions/student";
 import Subinfo from "component/Subinfo";
 
 const FPG = () => {
+  const [state, setState] = useState({ value: 1 });
+
+  const handleChange = (e, { value }) => setState({ value });
+
   const colors = ["#12c2e9", "#c471ed", "#f64f59"];
 
   const { fpg } = useSelector((s) => s.student);
@@ -15,10 +27,32 @@ const FPG = () => {
     dispatch(getDataFPG());
   }, []);
 
-  const createData = (index) =>
-    fpg[index].map((val, i) => (
-      <Subinfo context={val} key={i} color={colors[index - 3]} />
-    ));
+  const createData = (index) => {
+    if (state.value === 1) {
+      return fpg[index].map((val, i) => (
+        <Subinfo context={val} key={i} color={colors[index - 3]} />
+      ));
+    } else {
+      if (index !== 5) {
+        const newIndex = Math.floor(fpg[state.value].length / 3);
+
+        return fpg[state.value]
+          .slice(newIndex * (index - 3), newIndex + newIndex * (index - 3))
+          .map((val, i) => (
+            <Subinfo context={val} key={i} color={colors[state.value - 3]} />
+          ));
+      } else {
+        const newIndex = Math.floor(fpg[state.value].length / 3);
+        const final = newIndex * 2 ;
+
+        return fpg[state.value]
+          .slice(final)
+          .map((val, i) => (
+            <Subinfo context={val} key={i} color={colors[state.value - 3]} />
+          ));
+      }
+    }
+  };
 
   return (
     <div className="mt-2 ml-3">
@@ -27,7 +61,7 @@ const FPG = () => {
           <h3> Phân Tích Dữ Liệu Dựa Trên FP Growth</h3>
         </Label>
         <Button color="google plus">Áp dụng Toàn Bộ</Button>
-        <Button.Group className="bg-white ml-3">
+        <Button.Group className="bg-white ml-lg-3 mt-xs-2">
           <Button basic color="red">
             Áp dụng Model 1
           </Button>
@@ -38,6 +72,46 @@ const FPG = () => {
             Áp dụng Model 3
           </Button>
         </Button.Group>
+        <Form className="d-flex flex-row">
+          <Form.Field className="mr-5">Chọn Chế Độ:</Form.Field>
+          <Form.Field className="mr-5">
+            <Checkbox
+              radio
+              label="Tất Cả"
+              name="checkboxRadioGroup"
+              value={1}
+              checked={state.value === 1}
+              onChange={handleChange}
+            />
+          </Form.Field>
+          <Form.Field className="mr-5">
+            <Checkbox
+              radio
+              label="Luật khai phá 2 sản phẩm"
+              value={3}
+              checked={state.value === 3}
+              onChange={handleChange}
+            />
+          </Form.Field>
+          <Form.Field className="mr-5">
+            <Checkbox
+              radio
+              label="Luật khai phá 3 sản phẩm"
+              value={4}
+              checked={state.value === 4}
+              onChange={handleChange}
+            />
+          </Form.Field>
+          <Form.Field className="mr-5">
+            <Checkbox
+              radio
+              label="Luật khai phá 4 sản phẩm"
+              value={5}
+              checked={state.value === 5}
+              onChange={handleChange}
+            />
+          </Form.Field>
+        </Form>
       </div>
       <Grid className="mx-2">
         <GridRow>

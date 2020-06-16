@@ -36,7 +36,7 @@ const StackChart = () => {
       {
         name: "a",
         data: arr,
-      },
+      }
     ],
     options: {
       chart: {
@@ -74,7 +74,7 @@ const StackChart = () => {
         options={state.options}
         series={state.series}
         type="area"
-        height={160}
+        height="90%"
       />
     </Segment>
   );

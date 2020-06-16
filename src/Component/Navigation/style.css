@@ -1,4 +1,4 @@
-.menu {
+.menu-cus{
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 30% !important;
@@ -27,7 +27,7 @@
     font-size: 14px;
 }
 .nav-top{
-  position: fixed; /* Set the navbar to fixed position */
+  position: absolute; /* Set the navbar to fixed position */
   top: 0;
   z-index: 100;
   background-color: white;
